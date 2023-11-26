@@ -1,0 +1,13 @@
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/bin/Debug/MixyPluginLoader.dll
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/bin/Debug/MixyPluginLoader.pdb
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/bin/Debug/UnityEngine.PhysicsModule.dll
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/bin/Debug/SDG.NetTransport.dll
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/obj/Debug/MixyPluginLoader.csproj.AssemblyReference.cache
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/obj/Debug/MixyPluginLoader.csproj.CoreCompileInputs.cache
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/obj/Debug/MixyPluginLoader.csproj.CopyComplete
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/obj/Debug/MixyPluginLoader.dll
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/obj/Debug/MixyPluginLoader.pdb
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/bin/Debug/MixyWebhookBuilder.dll
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/bin/Debug/Rocket.API.dll
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/bin/Debug/Rocket.Core.dll
+/Users/macbookpro/RiderProjects/MixyPluginLoader/MixyPluginLoader/bin/Debug/Rocket.Unturned.dll

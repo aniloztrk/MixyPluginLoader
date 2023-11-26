@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{E0F32CEF-BB44-4227-8A13-7FBB31709330}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>MixyPluginLoader</RootNamespace>
+        <AssemblyName>MixyPluginLoader</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="0Harmony">
+          <HintPath>..\..\..\Desktop\Karışık\Kaynak\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+          <HintPath>..\..\..\Desktop\Karışık\Kaynak\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="com.rlabrecque.steamworks.net">
+          <HintPath>..\..\..\Desktop\Karışık\Kaynak\com.rlabrecque.steamworks.net.dll</HintPath>
+        </Reference>
+        <Reference Include="MixyWebhookBuilder">
+          <HintPath>..\..\..\Desktop\GuncelKaynak\MixyWebhookBuilder.dll</HintPath>
+        </Reference>
+        <Reference Include="MixyYamlHelper">
+          <HintPath>..\..\..\Desktop\MixyYamlHelper.dll</HintPath>
+        </Reference>
+        <Reference Include="Newtonsoft.Json">
+          <HintPath>..\..\..\Desktop\Karışık\Kaynak\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="Rocket.API">
+          <HintPath>..\..\..\Desktop\GuncelKaynak\Rocket.API.dll</HintPath>
+        </Reference>
+        <Reference Include="Rocket.Core">
+          <HintPath>..\..\..\Desktop\GuncelKaynak\Rocket.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Rocket.Unturned">
+          <HintPath>..\..\..\Desktop\GuncelKaynak\Rocket.Unturned.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="UnityEngine">
+          <HintPath>..\..\..\Desktop\Karışık\Kaynak\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\..\..\Desktop\Karışık\Kaynak\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="YamlDotNet">
+          <HintPath>..\..\..\Desktop\YamlDotNet.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Config\ConfigRoot.cs" />
+        <Compile Include="Extensions\RocketPluginManagerExtensions.cs" />
+        <Compile Include="LoaderMain.cs" />
+        <Compile Include="Models\Plugin.cs" />
+        <Compile Include="Models\Webhook.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Utils\AesEncryptor.cs" />
+        <Compile Include="Utils\ConsoleHelper.cs" />
+        <Compile Include="Utils\Json.cs" />
+        <Compile Include="Utils\ProtectionMethods.cs" />
+        <Compile Include="Utils\WebHelper.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
